@@ -42,44 +42,42 @@ This is a personal portfolio website built with Django to present my background,
 The required Python packages and dependencies are listed in the `requirements.txt` file.
 
 ## Folder Structure
-
 Portfolio-Project/
+├── Portfolio/
+│ ├── settings.py
+│ ├── urls.py
+│ ├── wsgi.py
+│ └── asgi.py
+├── portfolio_app/
+│ ├── views.py
+│ ├── urls.py
+│ ├── models.py
+│ ├── admin.py
+│ └── migrations/
+├── static/
+│ ├── css/
+│ │ └── style.css
+│ ├── files/
+│ │ └── CV.pdf
+│ └── images/
+│ └── profile.png
+├── templates/
+│ ├── base.html
+│ ├── home.html
+│ ├── about.html
+│ ├── skills.html
+│ ├── services.html
+│ ├── projects.html
+│ ├── contact.html
+│ └── includes/
+│ ├── navbar.html
+│ └── footer.html
 ├── manage.py
 ├── .env
 ├── .gitignore
 ├── requirements.txt
 ├── README.md
-├── db.sqlite3
-├── Portfolio/
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-│   └── asgi.py
-├── portfolio_app/
-│   ├── views.py
-│   ├── urls.py
-│   ├── models.py
-│   ├── admin.py
-│   └── migrations/
-├── static/
-│   ├── css/
-│   │   └── style.css
-│   ├── files/
-│   │   └── CV.pdf
-│   └── images/
-│       └── profile.png
-└── templates/
-    ├── base.html
-    ├── home.html
-    ├── about.html
-    ├── skills.html
-    ├── services.html
-    ├── projects.html
-    ├── contact.html
-    └── includes/
-        ├── navbar.html
-        └── footer.html
-
+└── db.sqlite3
 
 ## Installation
 
@@ -98,7 +96,6 @@ Portfolio-Project/
 3. Install the required packages
 
    pip install -r requirements.txt
-
 
 4. Create a `.env` file in the project root and add
 
