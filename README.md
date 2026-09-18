@@ -41,6 +41,46 @@ This is a personal portfolio website built with Django to present my background,
 ## Project Requirements
 The required Python packages and dependencies are listed in the `requirements.txt` file.
 
+## Folder Structure
+
+Portfolio-Project/
+├── manage.py
+├── .env
+├── .gitignore
+├── requirements.txt
+├── README.md
+├── db.sqlite3
+├── Portfolio/
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   └── asgi.py
+├── portfolio_app/
+│   ├── views.py
+│   ├── urls.py
+│   ├── models.py
+│   ├── admin.py
+│   └── migrations/
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── files/
+│   │   └── CV.pdf
+│   └── images/
+│       └── profile.png
+└── templates/
+    ├── base.html
+    ├── home.html
+    ├── about.html
+    ├── skills.html
+    ├── services.html
+    ├── projects.html
+    ├── contact.html
+    └── includes/
+        ├── navbar.html
+        └── footer.html
+
+
 ## Installation
 
 1. Clone the repository
@@ -58,6 +98,7 @@ The required Python packages and dependencies are listed in the `requirements.tx
 3. Install the required packages
 
    pip install -r requirements.txt
+
 
 4. Create a `.env` file in the project root and add
 
