@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Home | Tayyaba Zafar{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-greeting">Hello, I'm</p>
+    <h1 class="hero-name">Tayyaba Zafar</h1>
+    <h2 class="hero-title">BS Artificial Intelligence Student <span>&</span> Web Developer</h2>
+    <p class="hero-desc">
+      I'm currently studying Artificial Intelligence, and I love building websites
+      and web applications using Django. I enjoy learning new things, solving
+      problems with code, and turning simple ideas into real, working projects.
+      Take a look around and explore my work.
+    </p>
+    <div class="hero-tags">
+      <span>Python</span>
+      <span>Django</span>
+      <span>Machine Learning</span>
+      <span>Problem Solver</span>
+    </div>
+    <div class="hero-buttons">
+      <a href="{% url 'projects' %}" class="btn-primary">View My Work</a>
+      <a href="{% url 'contact' %}" class="btn-outline">Get In Touch</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

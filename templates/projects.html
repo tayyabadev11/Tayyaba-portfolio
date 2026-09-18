@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}Projects | Tayyaba Zafar{% endblock %}
+{% block content %}
+<section class="projects">
+  <h2 class="section-title">My <span>Projects</span></h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Noodle Store</h3>
+      <p>
+        A Django website built to display a catalog of noodle products. Visitors can
+        browse different noodle varieties, view individual product pages with full
+        details such as name, description, price, and category, and explore items
+        organized by category for easier navigation. It also includes a fully
+        functional Django admin panel where products can be added, updated, and
+        managed without touching any code.
+      </p>
+      <div class="tech-badges">
+        <span>Python</span>
+        <span>Django</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>SQLite</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <h3>Job Portal</h3>
+      <p>
+        A Django website that connects employers with job seekers in a simple and
+        organized way. Employers can create job listings with details like title,
+        company, location, salary, and description, and manage them from a personal
+        dashboard. Job seekers can browse and search for jobs, then apply directly by
+        submitting a resume and cover letter, with role-based access keeping each
+        user's experience clean and secure.
+      </p>
+      <div class="tech-badges">
+        <span>Python</span>
+        <span>Django</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>SQLite</span>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
