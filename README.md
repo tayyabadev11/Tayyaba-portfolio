@@ -57,6 +57,7 @@ This is a personal portfolio website built with Django to present my background,
 The required Python packages and dependencies are listed in the `requirements.txt` file.
 
 ## Folder Structure
+````
 Portfolio-Project/
 ├── Portfolio/
 │ ├── settings.py
@@ -98,6 +99,7 @@ Portfolio-Project/
 ├── requirements.txt
 ├── README.md
 └── db.sqlite3
+````
 
 ## Installation
 
