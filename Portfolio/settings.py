@@ -125,6 +125,12 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 
 MAILERS = {
     'default': {
-        'BACKEND': 'django.core.mail.backends.console.EmailBackend',
+        'BACKEND': 'django.core.mail.backends.smtp.EmailBackend',
+        'HOST': 'smtp.gmail.com',
+        'PORT': 587,
+        'USE_TLS': True,
+        'HOST_USER': config('EMAIL_HOST_USER'),
+        'HOST_PASSWORD': config('EMAIL_HOST_PASSWORD'),
     },
 }
+DEFAULT_FROM_EMAIL = config('EMAIL_HOST_USER')
